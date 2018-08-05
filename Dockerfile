@@ -7,4 +7,5 @@ RUN yum install python-devel -y
 RUN pip install --upgrade pip
 #WORKDIR /root/python-flask
 RUN pip install -r requirements.txt
-CMD ["python web.py"]
+ENTRYPOINT ["python"]
+CMD ["web.py"]

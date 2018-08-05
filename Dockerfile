@@ -8,4 +8,5 @@ RUN pip install --upgrade pip
 #WORKDIR /root/python-flask
 RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
+
 CMD ["web.py"]
